@@ -4,7 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COMIDA CHINA</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===== HEADER ===== */
+header{
+    background: linear-gradient(135deg,#111,#7a0000,#222);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    position:relative;
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:3px;
+}
+
+/* Patrón oriental sutil */
+header::after{
+    content:"";
+    background-image:url('https://www.transparenttextures.com/patterns/asanoha-400px.png');
+    opacity:0.08;
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:1.5rem;
+    color:#fff;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+}
+
+.menu li{
+    margin-left:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#ff4d4d;
+}
+
+/* Botón móvil */
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===== SECCIONES ===== */
+section{
+    padding:70px 10%;
+    background:#fffaf5;
+}
+
+section:nth-child(even){
+    background:#fff1e6;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#7a0000;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:#ff4d4d;
+    text-decoration:none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    .menu{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#111;
+        flex-direction:column;
+        width:100%;
+        display:none;
+        text-align:center;
+    }
+
+    .menu li{
+        margin:15px 0;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+}
+
+</style>
 </head>
 <body>
 
@@ -136,6 +306,16 @@
     </p>
     <p>© 2026 COMIDA CHINA - Todos los derechos reservados</p>
 </footer>
-<script src="script.js"></script>
+
+<!-- JAVASCRIPT -->
+<script>
+const menuToggle = document.getElementById("mobile-menu");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function(){
+    menu.classList.toggle("active");
+});
+</script>
+
 </body>
 </html>
