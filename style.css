@@ -9,6 +9,10 @@ html{
     scroll-behavior:smooth;
 }
 
+body {
+    padding-top: 150px;     /* Ajusta según altura real del header + nav */
+}
+
 /* ===== HEADER ===== */
 header{
     background: linear-gradient(135deg,#111,#7a0000,#222);
