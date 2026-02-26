@@ -16,6 +16,8 @@ header{
     text-align:center;
     padding:20px 20px;
     position:relative;
+    position:sticky;
+    top:0;
 }
 
 header h1{
@@ -36,9 +38,7 @@ header::after{
 .header-container {
     display: flex;
     justify-content: center;  /* Centra horizontalmente */
-    gap: 20px;                /* Espacio entre logo y texto */
-    position:sticky;
-    top:0;                    
+    gap: 20px;                /* Espacio entre logo y texto */                     
 }
 
 /* ===== NAVBAR ===== */
