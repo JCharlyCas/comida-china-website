@@ -37,6 +37,8 @@ header::after{
     display: flex;
     justify-content: center;  /* Centra horizontalmente */
     gap: 20px;                /* Espacio entre logo y texto */
+    position:sticky;
+    top:0;                    
 }
 
 /* ===== NAVBAR ===== */
