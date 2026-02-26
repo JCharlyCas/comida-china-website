@@ -65,6 +65,11 @@ nav{
     width: 80px;
     height: 80px;
     margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.1);
 }
 
 .menu{
