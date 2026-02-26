@@ -55,7 +55,15 @@ nav{
 
 .main-logo {
     width: 120px;
+    height: 120px;
     margin-bottom: 5px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: center;  /* Centra horizontalmente */
+    gap: 15px;                /* Espacio entre logo y texto */
 }
 
 .menu{
