@@ -42,11 +42,15 @@ header::after{
 }
 
 /* ===== NAVBAR ===== */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 nav{
-    background:#111;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    background:#111;  
 }
 
 .nav-container{
