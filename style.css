@@ -35,7 +35,6 @@ header::after{
 
 .header-container {
     display: flex;
-    align-items: center;      /* Centra verticalmente */
     justify-content: center;  /* Centra horizontalmente */
     gap: 10px;                /* Espacio entre logo y texto */
 }
