@@ -77,9 +77,8 @@ nav{
 }
 
 .menu{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    list-style:none;
+    display:flex;
 }
 
 .menu li{
@@ -107,7 +106,7 @@ nav{
 
 /* ===== SECCIONES ===== */
 section{
-    padding:100px 10%;
+    padding:70px 10%;
     background:#fffaf5;
 }
 
