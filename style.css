@@ -84,6 +84,7 @@ nav{
 .menu{
     list-style:none;
     display:flex;
+    transition: all 0.3s ease;
 }
 
 .menu li{
