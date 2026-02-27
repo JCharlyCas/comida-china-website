@@ -96,6 +96,10 @@ nav{
     color:#ff4d4d;
 }
 
+.menu.active{
+   display:flex;
+}
+
 /* Botón móvil */
 .menu-toggle{
     display:none;
@@ -181,7 +185,7 @@ footer a{
     }
 
     .menu.active{
-        max-height: 400px;
+        display: flex;
     }
 
     .menu-toggle{
