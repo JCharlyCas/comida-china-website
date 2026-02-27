@@ -82,9 +82,9 @@ nav{
 }
 
 .menu{
-    list-style:none;
-    display:flex;
-    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
 .menu li{
@@ -187,7 +187,7 @@ footer a{
     }
 
     .menu.active{
-        display:flex;
+        max-height: 400px;
     }
 
     .menu-toggle{
