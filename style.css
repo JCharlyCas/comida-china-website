@@ -73,21 +73,7 @@ nav{
 .main-logo {
     height: 80px;
     margin-bottom: 5px;
-    animation: girarLogo 2s linear infinite;
-}
-
-/* Animación */
-@keyframes girarLogo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-180deg); /* Negativo = antihorario */
-    }
-}
-
-.main-logo:hover {
-
+    animation: girarLogo 3s linear infinite;
 }
 
 .menu{
@@ -201,5 +187,17 @@ footer a{
 
     .menu-toggle{
         display:block;
+    }
+
+    /* Animación */
+@keyframes girarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
     }
 }
