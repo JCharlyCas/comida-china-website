@@ -71,7 +71,6 @@ nav{
 }
 
 .main-logo {
-    width: 80px;
     height: 80px;
     margin-bottom: 5px;
     animation: girarLogo 2s linear infinite;
@@ -83,12 +82,12 @@ nav{
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(-360deg); /* Negativo = antihorario */
+        transform: rotate(-180deg); /* Negativo = antihorario */
     }
 }
 
 .main-logo:hover {
-    transform: scale(1.1);
+
 }
 
 .menu{
