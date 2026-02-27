@@ -170,7 +170,7 @@ footer a{
 
     .menu{
         position:absolute;
-        top:70px;
+        top: 100%; 
         left:0;
         width:100%;
         background:#111;
