@@ -55,6 +55,7 @@ header::after{
 
 nav{
     background:#111;  
+    position: relative;
 }
 
 .nav-container{
@@ -169,13 +170,15 @@ footer a{
 
     .menu{
         position:absolute;
-        top:60px;
-        right:0;
+        top:100px;
+        left:0;
+        width:100%;
         background:#111;
         flex-direction:column;
-        width:100%;
+        text-align: center;
         display:none;
-        text-align:center;
+        padding: 10px 0;
+        border-top: 1px solid #333;
     }
 
     .menu li{
